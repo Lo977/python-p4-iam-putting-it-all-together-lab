@@ -91,7 +91,7 @@ class TestUser:
             db.session.commit()
 
             user = User(username="Prabhdip")
-
+            user.password_hash = "password"
             recipe_1 = Recipe(
                 title="Delicious Shed Ham",
                 instructions="""Or kind rest bred with am shed then. In""" + \
